@@ -24,10 +24,11 @@ app = FastAPI() # Esto crea una instancia de una aplicación FastAPI, que maneja
 app.include_router(todos.router) #Incluye un enrutador de un módulo llamado todos.py, que contiene rutas específicas (endpoints) relacionadas con tareas pendientes. Esta línea se comentará hasta que se cree el enrutador.
 
 
-#origins = [
-#    "http://localhost:3000",
-#    "https://todo-frontend-khaki.vercel.app/",
-#]
+origins = [
+   "http://localhost:3000",
+   "http://127.0.0.1:3000",
+   "https://modern-todo-frontend-sooty.vercel.app",
+]
 
 # 4) Configuración del middleware CORS 
 # CORS configuration, needed for frontend development
